@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started
+title: Blogging With Github & Jekyll
 ---
 
 {{ page.title }}
