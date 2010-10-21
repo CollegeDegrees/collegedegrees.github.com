@@ -117,11 +117,16 @@ ul.posts {
   }
 
   .site .footer {
-    font-size: 80%;
     color: #666;
     border-top: 0.25em solid #eee;
     margin-top: 2em;
+    padding-top: 2em;
     overflow: hidden;
+  }
+  
+  .site .twitter {
+      width: 50%;
+      float: left;
   }
 
     .site .footer .contact {
