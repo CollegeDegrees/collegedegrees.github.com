@@ -4,26 +4,19 @@
 /*
 /*****************************************************************************/
 
-/* Global Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html, body {
-  height: 100%;
+    background: transparent url("images/background.jpg") top center;
+    height: 100%;
 }
 
 body {
-  background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
-  text-align: center;
+    background-image: url("images/background-spotlight.jpg");
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 h1 {
@@ -78,18 +71,23 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 110%;
+.container {
   text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
+  font-size: 125%;
+  padding: 3em 0 2em 0;
+}
+
+.site {
+    background: #fff;
+    -moz-border-radius: 1em;
 }
 
 .title {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.25em solid #eee;
 }
 
   .site .title a {
@@ -105,6 +103,7 @@ ul.posts {
     color: #aaa;
     text-decoration: none;
     margin-left: 1em;
+    float: right;
   }
 
   .site .title a.extra:hover {
@@ -118,7 +117,7 @@ ul.posts {
   .site .footer {
     font-size: 80%;
     color: #666;
-    border-top: 4px solid #eee;
+    border-top: 0.25em solid #eee;
     margin-top: 2em;
     overflow: hidden;
   }

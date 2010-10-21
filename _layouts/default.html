@@ -9,40 +9,51 @@
 	<!-- syntax highlighting CSS -->
 	<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
+	<!-- Framework CSS -->
+    <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
 	<!-- Homepage CSS -->
 	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
-	<!-- Typekit -->
-	<script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+    <!-- Import fancy-type plugin for the sample page. -->
+    <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
 </head>
 <body>
 
-<div class="site">
-  <div class="title">
-    <a href="/">CollegeDegrees Developers' Blog</a>
-    <a class="extra" href="/">home</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-		<a href="http://github.com/EricClemmons">Eric Clemmons</a><br />
-		<a href="http://github.com/EvanK">Evan Kaufman</a>
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://twitter.com/EricClemmons/">twitter.com/EricClemmons</a><br />
-        <a href="http://twitter.com/EvanSKaufman/">twitter.com/EvanK</a>
-      </p>
-    </div>
-  </div>
-</div>
+<div class="container">
+    
+    <div class="site push-4 span-16">
+      <div class="box">
+        
+          <div class="title">
+            <a href="/">CollegeDegrees Developers' Blog</a>
+            <a class="extra" href="/">home</a>
+          </div>
 
-<!-- <a href="http://github.com/ericclemmons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a> -->
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <a href="http://github.com/EricClemmons">Eric Clemmons</a><br />
+                <a href="http://github.com/EvanK">Evan Kaufman</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="http://twitter.com/EricClemmons/">twitter.com/EricClemmons</a><br />
+                <a href="http://twitter.com/EvanSKaufman/">twitter.com/EvanK</a>
+              </p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    
+</div>
 
 </body>
 </html>
