@@ -16,52 +16,58 @@ total number of columns have an impact on your database size.
 One approach is to lose some clarity in the application and an extra column by simply basing the `is_published` value
 by the `published_date`:
 
-    // Retrieve a `Post` object
-    $post = Posts::findById($id);
-    
-    $pubDate = $post->getPublishedDate();
-    
-    if ($pubDate) {
-        echo "Published: " . date($pubDate, 'Y-m-d H:i:s');
-    } else {
-        echo "Post is not yet available.";
-    }
+{% highlight php %}
+// Retrieve a `Post` object
+$post = Posts::findById($id);
+
+$pubDate = $post->getPublishedDate();
+
+if ($pubDate) {
+    echo "Published: " . date($pubDate, 'Y-m-d H:i:s');
+} else {
+    echo "Post is not yet available.";
+}
+{% endhighlight %}
 
 ## Good - Change the Model Code
 
 Building off of the first example, we can clean up our code a little bit better and add clarity to
 our rendering logic...
 
-    $post = Posts::findById($id);
-    
-    if ($post->isPublished()) {
-        echo "Published: " . date($post->getPublishedDate(), 'Y-m-d H:i:s');
-    } else {
-        echo "Post is not yet available.";
-    }
+{% highlight php %}
+$post = Posts::findById($id);
+
+if ($post->isPublished()) {
+    echo "Published: " . date($post->getPublishedDate(), 'Y-m-d H:i:s');
+} else {
+    echo "Post is not yet available.";
+}
+{% endhighlight }
 
 by updating the `Post` model instead...
 
-    class Post
+{% highlight php %}
+class Post
+{
+    
+    protected $date_published;
+    
+    ...
+    
+    public function getPublishedDate()
     {
-        
-        protected $date_published;
-        
-        ...
-        
-        public function getPublishedDate()
-        {
-            return $this->date_published;
-        }
-        
-        public function isPublished()
-        {
-            return !!$this->getPublishedDate();
-        }
-        
-        ...
-        
+        return $this->date_published;
     }
+    
+    public function isPublished()
+    {
+        return !!$this->getPublishedDate();
+    }
+    
+    ...
+    
+}
+{% endhighlight %}
 
 - - -
 
