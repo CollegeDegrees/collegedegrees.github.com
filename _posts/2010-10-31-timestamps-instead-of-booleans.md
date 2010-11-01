@@ -42,7 +42,7 @@ if ($post->isPublished()) {
 } else {
     echo "Post is not yet available.";
 }
-{% endhighlight }
+{% endhighlight %}
 
 by updating the `Post` model instead...
 
