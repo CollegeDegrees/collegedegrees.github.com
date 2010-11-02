@@ -25,23 +25,28 @@ I re-packaged this version myself to resolve some path issues with Symfony and a
 customization of the Command Line Client (CLI) (more on that in a bit).
 *[View the code](http://github.com/ericclemmons/migrations/)*
 
-1. Download [doctrine-migrations.phar](http://github.com/downloads/ericclemmons/migrations/doctrine-migrations.phar).
-2. Save *doctrine-migrations.phar* to a folder such as `/myapp/bin/doctrine-migrations.phar`.
-3. Create `/myapp/bin/doctrine-migrations`:
+#### 1. Download [doctrine-migrations.phar](http://github.com/downloads/ericclemmons/migrations/doctrine-migrations.phar).
+#### 2. Save *doctrine-migrations.phar* to a folder such as:
+    
+    /myapp/bin/doctrine-migrations.phar
+    
+#### 3. Create `/myapp/bin/doctrine-migrations`:
 
     #!/bin/sh
     php doctrine-migrations.phar "$@"
 
-4. Test it out: `/myapp/bin $ ./doctrine-migrations migrations:help`:
-
+#### 4. Test it out:
+    
+    /myapp/bin $ ./doctrine-migrations
+    
     Doctrine Migrations version 2.0.0-DEV
-
+    
     Usage:
       [options] command [arguments]
     
     ...
 
-5. That's it!
+#### 5. That's it!
 
 ### Configuration
 
