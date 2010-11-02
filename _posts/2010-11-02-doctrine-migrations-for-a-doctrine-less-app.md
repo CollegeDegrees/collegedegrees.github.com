@@ -13,11 +13,11 @@ and entities.
 However, we have some legacy code written in CodeIgniter that uses CI's proprietary ORM, but lacks
 migration support.
 
-Luckily, Doctrine de-couples it's ORM, DBAL, Common, and Migrations components for individual use.
+Luckily, Doctrine de-couples it's ORM, DBAL, Common, and Migrations
+([official documentation](http://www.doctrine-project.org/projects/migrations/2.0/docs/reference/introduction/en))
+components for individual use.
 
 ## Stand-Alone Doctrine Migrations
-
-[Documentation](http://www.doctrine-project.org/projects/migrations/2.0/docs/reference/introduction/en)*
 
 ### Install
 
