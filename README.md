@@ -11,7 +11,7 @@ Authors
 
 * [Eric Clemmons](http://github.com/EricClemmons)
 * [Evan Kaufman](http://github.com/EvanK)
-
+* [Jesse Greathouse](https://github.com/jessegreathouse)
 License
 ===
 
